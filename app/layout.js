@@ -3,8 +3,11 @@ import Nav from './components/nav';
 import Footer from './components/footer';
 
 export const metadata = {
-  title: 'Next.js Tailwind Starter',
-  description: 'Starter project',
+  title: 'Mini Mart -  Ecommerce Marketplace',
+  description: 'E-commerce Project',
+  icons: {
+    icon: '/images/cart.png', 
+  },
 };
 
 export default function RootLayout({ children }) {
