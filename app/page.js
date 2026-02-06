@@ -15,9 +15,11 @@ export default function Home() {
               <h1 className="text-base sm:text-lg lg:text-xl px-5 py-3 text-black text-center">Shop Collection</h1>
             </div>
           </Link>
-          <div className="rounded-[50px] w-full sm:w-fit cursor-pointer">
-            <h1 className="text-base sm:text-lg lg:text-xl px-5 py-3 text-white text-center">Wear like a pro</h1>
-          </div>
+          <Link href="/Shop" className="rounded-[50px] w-full sm:w-fit cursor-pointer bg-transparent border-[0.1px]">
+            <div className="rounded-[50px] w-full sm:w-fit cursor-pointer">
+              <h1 className="text-base sm:text-lg lg:text-xl px-5 py-3 text-white text-center">Wear Like a pro</h1>
+            </div>
+          </Link>
         </div>
       </div>
 
