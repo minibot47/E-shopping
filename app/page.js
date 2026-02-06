@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex gap-2 flex-col bg-white text-white max-w-[1440px] m-auto p-3 sm:p-5">
       {/* HERO SECTION */}
-      <div className="h-[80vh] sm:h-[70vh] lg:h-[85vh] w-full rounded-[20px] sm:rounded-[30px] mb-10 sm:mb-16 p-5 sm:p-10 flex flex-col justify-between bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(/images/main.jpeg)'}}>
+      <div className="h-[85vh] sm:h-[70vh] lg:h-[85vh] w-full rounded-[20px] sm:rounded-[30px] mb-10 sm:mb-16 p-5 sm:p-10 flex flex-col justify-between bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(/images/main.jpeg)'}}>
         <div className="w-full font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl animate-slide-in-top">
           STYLE REDEFINED, EFORTLESSLY YOURS
         </div>
