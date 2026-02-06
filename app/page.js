@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex gap-2 flex-col bg-white text-white max-w-[1440px] m-auto p-3 sm:p-5">
       {/* HERO SECTION */}
-      <div className="h-[60vh] sm:h-[70vh] lg:h-[85vh] w-full rounded-[20px] sm:rounded-[30px] mb-10 sm:mb-16 p-5 sm:p-10 flex flex-col justify-between bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(/images/main.jpeg)'}}>
+      <div className="h-[80vh] sm:h-[70vh] lg:h-[85vh] w-full rounded-[20px] sm:rounded-[30px] mb-10 sm:mb-16 p-5 sm:p-10 flex flex-col justify-between bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(/images/main.jpeg)'}}>
         <div className="w-full font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl animate-slide-in-top">
           STYLE REDEFINED, EFORTLESSLY YOURS
         </div>
@@ -24,7 +24,7 @@ export default function Home() {
       {/* NEW ARRIVALS HEADER */}
       <ScrollReveal className="w-full h-fit text-black flex flex-col gap-3 sm:gap-4 mb-6 sm:mb-10">
         <div>
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl">New Arrivals</h1>
+          <h1 className="text-2xl font-semibold sm:text-3xl lg:text-4xl">New Arrivals</h1>
         </div>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
           <h2 className="font-extralight text-sm sm:text-base">Shop the latest styles: Stay ahead of the curve with our newest arrivals</h2>
