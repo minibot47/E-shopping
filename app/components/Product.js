@@ -120,14 +120,14 @@ export default function Product() {
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light">No need to sacrifice style for comfort</h2>
                     <div className="w-full h-fit flex flex-col md:flex-row gap-6 sm:gap-8 lg:gap-10">
                         <div className="w-full md:w-1/2 flex flex-col gap-4 sm:gap-5">
-                            <img src="/images/product4.webp" alt="product" className="w-full h-[50vh] sm:h-[60vh] lg:h-[70vh] rounded-[20px] sm:rounded-[30px]"/>
+                            <img src="/images/product4.webp" alt="product" className="w-full h-[40vh] sm:h-[60vh] lg:h-[70vh] rounded-[20px] sm:rounded-[30px]"/>
                             <div className="w-full flex flex-col gap-2">
                                 <h2 className="text-xl sm:text-2xl lg:text-3xl">Sustainable & trendy</h2>
                                 <h3 className="font-extralight text-sm sm:text-base">Our pieces are sustainably made, and designed to be a timeless piece in your wardrobe.</h3>
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 flex flex-col gap-4 sm:gap-5">
-                            <img src="/images/product5.webp" alt="product" className="w-full h-[50vh] sm:h-[60vh] lg:h-[70vh] rounded-[20px] sm:rounded-[30px]"/>
+                            <img src="/images/product5.webp" alt="product" className="w-full h-[40vh] sm:h-[60vh] lg:h-[70vh] rounded-[20px] sm:rounded-[30px]"/>
                             <div className="w-full flex flex-col gap-2">
                                 <h2 className="text-xl sm:text-2xl lg:text-3xl">Elevate your style</h2>
                                 <h3 className="font-extralight text-sm sm:text-base">Made with natural materials, each item is comfortable and easily machine washable.</h3>
@@ -148,7 +148,7 @@ export default function Product() {
             {/* PRODUCT RECOMMENDATIONS */}
             <ScrollReveal className="w-full max-w-[1440px] p-4 sm:p-5 m-auto h-fit rounded-[20px] sm:rounded-[30px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-8 sm:mb-10">
                 {[1, 2, 3].map((num) => (
-                    <div key={num} className="w-full h-[300px] sm:h-[350px] lg:h-full rounded-[20px] sm:rounded-[30px] relative overflow-hidden group cursor-pointer">
+                    <div key={num} className="w-full h-[350px] sm:h-[350px] lg:h-full rounded-[20px] sm:rounded-[30px] relative overflow-hidden group cursor-pointer">
                         <img src={`/images/grid${num}.png`} alt={`Grid${num}`} className="w-full h-full object-cover rounded-[20px] sm:rounded-[30px] transition-transform duration-500 ease-out group-hover:scale-110"/>
                         <div className="absolute bottom-0 left-0 h-[50px] sm:h-[60px] w-full bg-black rounded-b-[20px] sm:rounded-b-[30px] flex items-center justify-center transform translate-y-full transition-transform duration-300 ease-in-out group-hover:translate-y-0">
                             <h2 className="text-white text-sm sm:text-base">View Product</h2>
@@ -158,10 +158,10 @@ export default function Product() {
             </ScrollReveal>
 
             {/* FEATURES SECTION */}
-            <div className="w-full bg-gray-100 m-auto h-auto py-8 sm:py-0 sm:h-[30vh] flex items-center">
+            <div className="w-full bg-gray-100 m-auto h-auto py-8 sm:py-0 sm:h-[30vh]  flex items-center">
                 <div className="flex flex-col sm:flex-row w-full max-w-[1440px] m-auto">
                     <div className="w-full sm:w-1/2 lg:w-1/4 h-auto sm:h-[50%] text-black p-4 sm:p-5 flex items-center gap-4 sm:gap-5 justify-center border-b sm:border-b-0 sm:border-r border-gray-100">
-                        <ScrollReveal className="flex gap-3 sm:gap-4 items-center">
+                        <ScrollReveal className="flex gap-3 sm:gap-4 items-start lg:items-center sm:w-full">
                             <div className="flex-shrink-0">
                                 <img src="/images/shipping.svg" alt="logo" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"/>
                             </div>
@@ -172,7 +172,7 @@ export default function Product() {
                         </ScrollReveal>
                     </div>
                     <div className="w-full sm:w-1/2 lg:w-1/4 h-auto sm:h-[50%] text-black p-4 sm:p-5 flex items-center gap-4 sm:gap-5 justify-center border-b sm:border-b-0 lg:border-r border-gray-100">
-                        <ScrollReveal className="flex gap-3 sm:gap-4 items-center">
+                        <ScrollReveal className="flex gap-3 sm:gap-4 items-start lg:items-center sm:w-full">
                             <div className="flex-shrink-0">
                                 <img src="/images/shipping2.svg" alt="logo" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"/>
                             </div>
@@ -183,7 +183,7 @@ export default function Product() {
                         </ScrollReveal>
                     </div>
                     <div className="w-full sm:w-1/2 lg:w-1/4 h-auto sm:h-[50%] text-black p-4 sm:p-5 flex items-center gap-4 sm:gap-5 justify-center border-b sm:border-b-0 sm:border-r border-gray-100">
-                        <ScrollReveal className="flex gap-3 sm:gap-4 items-center">
+                        <ScrollReveal className="flex gap-3 sm:gap-4 items-start lg:items-center sm:w-full">
                             <div className="flex-shrink-0">
                                 <img src="/images/shipping3.svg" alt="logo" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"/>
                             </div>
@@ -194,7 +194,7 @@ export default function Product() {
                         </ScrollReveal>
                     </div>
                     <div className="w-full sm:w-1/2 lg:w-1/4 h-auto sm:h-[50%] text-black p-4 sm:p-5 flex items-center gap-4 sm:gap-5 justify-center">
-                        <ScrollReveal className="flex gap-3 sm:gap-4 items-center">
+                        <ScrollReveal className="flex gap-3 sm:gap-4 items-start lg:items-center sm:w-full">
                             <div className="flex-shrink-0">
                                 <img src="/images/shipping4.svg" alt="logo" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"/>
                             </div>

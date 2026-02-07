@@ -88,7 +88,7 @@ export default function About() {
             {/* FEATURES SECTION */}
             <div className="w-full bg-white m-auto h-auto py-8 sm:py-0 sm:h-[30vh] flex flex-col sm:flex-row items-center max-w-[1440px]">
                 <div className="w-full sm:w-1/2 lg:w-1/4 h-auto sm:h-[50%] text-black p-4 sm:p-5 flex items-center gap-4 sm:gap-5 justify-center border-b sm:border-b-0 sm:border-r border-gray-100">
-                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center">
+                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center w-full">
                         <div className="flex-shrink-0">
                             <img src="/images/shipping.svg" alt="logo" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"/>
                         </div>
@@ -99,7 +99,7 @@ export default function About() {
                     </ScrollReveal>
                 </div>
                 <div className="w-full sm:w-1/2 lg:w-1/4 h-auto sm:h-[50%] text-black p-4 sm:p-5 flex items-center gap-4 sm:gap-5 justify-center border-b sm:border-b-0 lg:border-r border-gray-100">
-                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center">
+                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center w-full">
                         <div className="flex-shrink-0">
                             <img src="/images/shipping2.svg" alt="logo" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"/>
                         </div>
@@ -110,7 +110,7 @@ export default function About() {
                     </ScrollReveal>
                 </div>
                 <div className="w-full sm:w-1/2 lg:w-1/4 h-auto sm:h-[50%] text-black p-4 sm:p-5 flex items-center gap-4 sm:gap-5 justify-center border-b sm:border-b-0 sm:border-r border-gray-100">
-                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center">
+                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center w-full">
                         <div className="flex-shrink-0">
                             <img src="/images/shipping3.svg" alt="logo" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"/>
                         </div>
@@ -121,7 +121,7 @@ export default function About() {
                     </ScrollReveal>
                 </div>
                 <div className="w-full sm:w-1/2 lg:w-1/4 h-auto sm:h-[50%] text-black p-4 sm:p-5 flex items-center gap-4 sm:gap-5 justify-center">
-                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center">
+                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center w-full">
                         <div className="flex-shrink-0">
                             <img src="/images/shipping4.svg" alt="logo" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"/>
                         </div>

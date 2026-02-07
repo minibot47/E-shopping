@@ -65,7 +65,7 @@ export default function Contact() {
             {/* FEATURES SECTION */}
             <div className="w-full sm:w-[90%] lg:w-[80%] max-w-[1440px] m-auto h-auto py-8 sm:py-0 sm:h-[30vh] flex flex-col sm:flex-row items-center">
                 <div className="w-full sm:w-1/2 lg:w-1/4 h-auto sm:h-[50%] text-black p-4 sm:p-5 flex items-center gap-4 sm:gap-5 justify-center border-b sm:border-b-0 sm:border-r-[0.1px] border-black">
-                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center">
+                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center w-full">
                         <div className="flex-shrink-0">
                             <img src="/images/shipping.svg" alt="logo" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"/>
                         </div>
@@ -76,7 +76,7 @@ export default function Contact() {
                     </ScrollReveal>
                 </div>
                 <div className="w-full sm:w-1/2 lg:w-1/4 h-auto sm:h-[50%] text-black p-4 sm:p-5 flex items-center gap-4 sm:gap-5 justify-center border-b sm:border-b-0 lg:border-r-[0.1px] border-black">
-                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center">
+                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center w-full">
                         <div className="flex-shrink-0">
                             <img src="/images/shipping2.svg" alt="logo" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"/>
                         </div>
@@ -87,7 +87,7 @@ export default function Contact() {
                     </ScrollReveal>
                 </div>
                 <div className="w-full sm:w-1/2 lg:w-1/4 h-auto sm:h-[50%] text-black p-4 sm:p-5 flex items-center gap-4 sm:gap-5 justify-center border-b sm:border-b-0 sm:border-r-[0.1px] border-black">
-                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center">
+                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center w-full">
                         <div className="flex-shrink-0">
                             <img src="/images/shipping3.svg" alt="logo" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"/>
                         </div>
@@ -98,7 +98,7 @@ export default function Contact() {
                     </ScrollReveal>
                 </div>
                 <div className="w-full sm:w-1/2 lg:w-1/4 h-auto sm:h-[50%] text-black p-4 sm:p-5 flex items-center gap-4 sm:gap-5 justify-center">
-                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center">
+                    <ScrollReveal className="flex gap-3 sm:gap-4 items-center w-full">
                         <div className="flex-shrink-0">
                             <img src="/images/shipping4.svg" alt="logo" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"/>
                         </div>
