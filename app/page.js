@@ -31,9 +31,9 @@ export default function Home() {
         </div>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
           <h2 className="font-extralight text-sm sm:text-base">Shop the latest styles: Stay ahead of the curve with our newest arrivals</h2>
-          <div>
-            <h2 className="text-base sm:text-lg lg:text-xl font-light underline leading-8">All products</h2>
-          </div>
+          <Link href="/Shop">
+          <h2 className="text-base sm:text-lg lg:text-xl font-light underline leading-8">All products</h2>
+          </Link>
         </div>
       </ScrollReveal>
 
