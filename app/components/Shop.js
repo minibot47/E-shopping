@@ -3,135 +3,9 @@
 import { useState } from "react";
 import ScrollReveal from "./ScrollReveal";
 import Link from "next/link";
+import { products } from "../data/products";
 
-const products = [
-  {
-    id: 1,
-    name: "Skyline Sweat",
-    price: "$607.60",
-    image: "/images/grid1.png",
-    category: "women",
-  },
-  {
-    id: 2,
-    name: "Nightfall Hoodie",
-    price: "$607.60",
-    image: "/images/grid2.png",
-    category: "men",
-  },
-  {
-    id: 3,
-    name: "Moss Layer",
-    price: "$607.60",
-    image: "/images/grid3.png",
-    category: "men",
-  },
-  {
-    id: 4,
-    name: "Gradient Sweat",
-    price: "$607.60",
-    image: "/images/grid4.png",
-    category: "women",
-  },
-  {
-    id: 5,
-    name: "Eco Fleece",
-    price: "$607.60",
-    image: "/images/grid5.png",
-    category: "men",
-  },
-  {
-    id: 6,
-    name: "Blue Edge",
-    price: "$320.00",
-    image: "/images/grid6.png",
-    category: "men",
-  },
-  {
-    id: 7,
-    name: "Ash hoodie",
-    price: "$320.00",
-    image: "/images/grid7.png",
-    category: "men",
-  },
-  {
-    id: 8,
-    name: "Neon Fade",
-    price: "$320.00",
-    image: "/images/grid8.png",
-    category: "women",
-  },
-  {
-    id: 9,
-    name: "Pacific Knit",
-    price: "$320.00",
-    image: "/images/grid9.png",
-    category: "women",
-  },
-  {
-    id: 10,
-    name: "Citrus Edge",
-    price: "$320.00",
-    image: "/images/grid10.png",
-    category: "men",
-  },
-  {
-    id: 11,
-    name: "Pine fleece",
-    price: "$320.00",
-    image: "/images/grid11.png",
-    category: "women",
-  },
-  {
-    id: 12,
-    name: "Fushion Crew",
-    price: "$320.00",
-    image: "/images/grid12.png",
-    category: "women",
-  },
-  {
-    id: 13,
-    name: "Terra Bag",
-    price: "$820.00",
-    image: "/images/bag1.png",
-    category: "bags",
-  },
-  {
-    id: 14,
-    name: "Vintage Tote",
-    price: "$520.00",
-    image: "/images/bag2.png",
-    category: "bags",
-  },
-  {
-    id: 15,
-    name: "Modern Duo",
-    price: "$300.00",
-    image: "/images/bag3.png",
-    category: "bags",
-  },
-  {
-    id: 16,
-    name: "Amber Carry",
-    price: "$450.00",
-    image: "/images/bag4.png",
-    category: "bags",
-  },
-  {
-    id: 17,
-    name: "Classic Arc",
-    price: "$320.00",
-    image: "/images/bag5.png",
-    category: "bags",
-  },
-  {
-    id: 18,
-    name: "Creasent Bag",
-    price: "$607.00",
-    image: "/images/bag6.png",
-    category: "bags",
-  },
-];
+
 
 export default function Shop() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -216,34 +90,26 @@ export default function Shop() {
         {/* PRODUCTS GRID */}
         <div className="w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {filteredProducts.map((product) => (
-            <div
-              key={product.id}
-              className="w-full h-[350px] sm:h-[350px] lg:h-[380px] rounded-[20px] sm:rounded-[30px] relative overflow-hidden group cursor-pointer bg-gray-100"
-            >
-              {/* PRODUCT IMAGE */}
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-full object-cover rounded-[20px] sm:rounded-[30px] transition-transform duration-500 ease-out group-hover:scale-110"
-              />
-
-              {/* HOVER OVERLAY */}
-              <div className="absolute bottom-0 left-0 h-[60px] sm:h-[70px] w-full bg-black rounded-b-[20px] sm:rounded-b-[30px] flex items-center justify-center
-                transform translate-y-full transition-transform duration-300 ease-in-out group-hover:translate-y-0">
-                <Link href="/Product" className="text-white text-xs sm:text-sm tracking-wide">
-                  <h2>
+            <Link href={`/Product/${product.id}`} key={product.id}>
+              <div className="w-full h-[350px] sm:h-[350px] lg:h-[380px] rounded-[20px] sm:rounded-[30px] relative overflow-hidden group cursor-pointer bg-gray-100">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover rounded-[20px] sm:rounded-[30px] transition-transform duration-500 ease-out group-hover:scale-110"
+                />
+                <div className="absolute bottom-0 left-0 h-[60px] sm:h-[70px] w-full bg-black rounded-b-[20px] sm:rounded-b-[30px] flex items-center justify-center
+                  transform translate-y-full transition-transform duration-300 ease-in-out group-hover:translate-y-0">
+                  <h2 className="text-white text-xs sm:text-sm tracking-wide">
                     View Product · {product.price}
                   </h2>
-                </Link>
+                </div>
+                <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
+                  <h3 className="text-black font-medium bg-white/80 px-2.5 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm">
+                    {product.name}
+                  </h3>
+                </div>
               </div>
-
-              {/* PRODUCT INFO (always visible) */}
-              <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
-                <h3 className="text-black font-medium bg-white/80 px-2.5 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm">
-                  {product.name}
-                </h3>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

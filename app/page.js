@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ScrollReveal from "./components/ScrollReveal";
+import { products } from "./data/products"
 
 export default function Home() {
   return (
@@ -38,13 +39,15 @@ export default function Home() {
 
       {/* PRODUCT GRID */}
       <ScrollReveal className="w-full h-fit rounded-[20px] sm:rounded-[30px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-4 sm:gap-4 mb-16 sm:mb-32">
-        {[1, 2, 3, 4, 5, 6].map((num) => (
-          <div key={num} className="w-full h-[350px] sm:h-[350px] lg:h-full rounded-[20px] sm:rounded-[30px] relative overflow-hidden group cursor-pointer">
-            <img src={`/images/grid${num}.png`} alt={`Grid${num}`} className="w-full h-full object-cover rounded-[20px] sm:rounded-[30px] transition-transform duration-500 ease-out group-hover:scale-110"/>
-            <div className="absolute bottom-0 left-0 h-[50px] sm:h-[60px] w-full bg-black rounded-b-[20px] sm:rounded-b-[30px] flex items-center justify-center transform translate-y-full transition-transform duration-300 ease-in-out group-hover:translate-y-0">
-              <h2 className="text-sm sm:text-base">View Product</h2>
+        {products.slice(0, 6).map((product) => (
+          <Link href={`/Product/${product.id}`} key={product.id}>
+            <div className="w-full h-[350px] sm:h-[350px] lg:h-full rounded-[20px] sm:rounded-[30px] relative overflow-hidden group cursor-pointer">
+              <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-[20px] sm:rounded-[30px] transition-transform duration-500 ease-out group-hover:scale-110"/>
+              <div className="absolute bottom-0 left-0 h-[50px] sm:h-[60px] w-full bg-black rounded-b-[20px] sm:rounded-b-[30px] flex items-center justify-center transform translate-y-full transition-transform duration-300 ease-in-out group-hover:translate-y-0">
+                <h2 className="text-sm sm:text-base">View Product</h2>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </ScrollReveal>
 
